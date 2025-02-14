@@ -1,0 +1,14 @@
+{
+  "name": "hiking-pace-calculator",
+  "version": "1.0.0",
+  "description": "A web app to calculate hiking speed on a long distance hike",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server src"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  },
+  "author": "Student Sam",
+  "license": "MIT"
+}
