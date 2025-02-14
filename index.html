@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Pace Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hiking pace calculator</h1>
+        <label for="totalDistance">Total distance (miles):</label>
+        <input type="number" id="totalDistance" required>
+
+        <label for="totalTime">Total time (days):</label>
+        <input type="number" id="totalTime" required>
+
+        <label for="zeroMileDays">Number of 0 mile days:</label>
+        <input type="number" id="zeroMileDays" required>
+
+        <div id="phasesContainer">
+            <h3>Hiking phases</h3>
+            <div id="phasesList"></div>
+            <button id="addPhaseButton" type="button">Add phase</button>
+        </div>
+
+        <button id="calculateButton">Calculate average mileage per day</button>
+
+        <h2 id="result"></h2>
+        <ul id="dailyMileageList"></ul>
+    </div>
+    <script>console.log('HTML loaded');</script>
+    <script src="app.js"></script>
+</body>
+</html>
