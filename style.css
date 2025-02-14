@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+    pointer-events: auto;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#dailyMileageList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#dailyMileageList li {
+    padding: 8px;
+    margin: 4px 0;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #28a745;
+}
+
+/* Remove the previous first-week styling */
+#dailyMileageList li:nth-child(-n+7) {
+    border-left-color: initial;
+    background-color: initial;
+}
+
+/* Phase-specific colors - Rainbow progression */
+#dailyMileageList li[data-phase="0"] {
+    border-left-color: #ff4136;  /* Red */
+    background-color: #ffdfdd;
+}
+
+#dailyMileageList li[data-phase="1"] {
+    border-left-color: #ff851b;  /* Orange */
+    background-color: #ffe4cc;
+}
+
+#dailyMileageList li[data-phase="2"] {
+    border-left-color: #ffdc00;  /* Yellow */
+    background-color: #fff8cc;
+}
+
+#dailyMileageList li[data-phase="3"] {
+    border-left-color: #2ecc40;  /* Green */
+    background-color: #d4edda;
+}
+
+#dailyMileageList li[data-phase="4"] {
+    border-left-color: #0074d9;  /* Blue */
+    background-color: #cce5ff;
+}
+
+/* Days after all phases */
+#dailyMileageList li:not([data-phase]) {
+    border-left-color: #7f00ff;  /* Violet */
+    background-color: #e8d5ff;
+}
+
+#phasesContainer {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.phase-input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.phase-input h4 {
+    margin: 0 0 10px 0;
+    color: #495057;
+}
+
+.phase-input label {
+    display: block;
+    margin: 5px 0;
+}
+
+.phase-input input {
+    width: calc(100% - 20px);
+    margin: 5px 0;
+}
+
+.remove-phase {
+    background-color: #dc3545;
+    margin-top: 10px;
+}
+
+.remove-phase:hover {
+    background-color: #c82333;
+}
+
+#addPhaseButton {
+    background-color: #17a2b8;
+    margin-top: 10px;
+}
+
+#addPhaseButton:hover {
+    background-color: #138496;
+}
