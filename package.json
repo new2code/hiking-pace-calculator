@@ -4,10 +4,10 @@
   "description": "A web app to calculate hiking speed on a long distance hike",
   "main": "index.html",
   "scripts": {
-    "start": "http-server src"
+    "start": "http-server ."
   },
   "devDependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^14.1.1"
   },
   "author": "Student Sam",
   "license": "MIT"
