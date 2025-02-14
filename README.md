@@ -40,12 +40,17 @@ https://new2code.github.io/hiking-pace-calculator/
    cd hiking-pace-calculator
    ```
 
-3. Start the development server:
+3. Install the dependencies: 
+   ```
+   npm install
+   ```
+   
+4. Start the development server:
    ```
    npm start
    ```
 
-4. Open your browser and visit:
+5. Open your browser and visit:
    ```
    http://localhost:8080
    ```
